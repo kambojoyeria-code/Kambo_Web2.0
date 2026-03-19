@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo | Kambó Fine Jewelry — Esmeraldas, Diamantes y Más</title>
+
+  <meta name="description" content="Explora el catálogo completo de Kambó Fine Jewelry. Anillos, collares, pulseras y aretes en esmeraldas colombianas certificadas, diamantes, oro 18k y plata Ley 950." />
+  <meta name="author" content="Kambó Fine Jewelry" />
+  <link rel="canonical" href="https://kambo-six.vercel.app/catalogo" />
+
+  <meta property="og:title" content="Catálogo | Kambó Fine Jewelry" />
+  <meta property="og:description" content="Anillos, collares, pulseras y aretes en esmeraldas colombianas certificadas, diamantes y metales nobles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kambo-six.vercel.app/catalogo" />
+  <meta property="og:image" content="https://kambo-six.vercel.app/assets/images/hero.png" />
+  <meta property="og:site_name" content="Kambó Fine Jewelry" />
+  <meta property="og:locale" content="es_CO" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Catálogo | Kambó Fine Jewelry" />
+  <meta name="twitter:image" content="https://kambo-six.vercel.app/assets/images/hero.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/icon.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header header--scrolled" id="header">
+  <nav class="nav container">
+    <a href="/" class="nav__logo" aria-label="Kambó Fine Jewelry — Inicio">
+      <img src="assets/images/logo.png" alt="Kambó Fine Jewelry" width="140" height="36" />
+    </a>
+
+    <ul class="nav__list" id="nav-list">
+      <li><a href="/"   class="nav__link">Inicio</a></li>
+      <li><a href="/#galeria" class="nav__link">Galería</a></li>
+      <li><a href="/catalogo" class="nav__link" aria-current="page">Catálogo</a></li>
+      <li><a href="/nosotros" class="nav__link">Nosotros</a></li>
+      <li><a href="/#testimonios" class="nav__link">Reseñas</a></li>
+      <li><a href="/#contacto"    class="nav__link">Contacto</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20una%20pieza%20del%20cat%C3%A1logo"
+         target="_blank" rel="noopener" class="nav__cta">Cotizar</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="catalog-page">
+    <div class="container">
+      <!-- Hero -->
+      <div class="catalog-page__hero" data-animate="fade-up">
+        <p class="section-label">Colección Completa</p>
+        <h1 class="section-title">Catálogo <em>Kambó</em></h1>
+        <p class="section-desc">Esmeraldas colombianas, diamantes y amatistas engastadas a la perfección.
+           Cada pieza es única — creada solo para quien la encarga.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-wrapper" data-animate="fade-up">
+        <div class="filter filter--category" id="dynamic-category-filters">
+          <span class="filter__label">Categoría:</span>
+          <button class="filter__btn active" data-filter-cat="all">Todos</button>
+        </div>
+        <div class="filter filter--metal" id="dynamic-metal-filters">
+          <span class="filter__label">Metal:</span>
+          <button class="filter__btn filter__btn--metal active" data-filter-metal="all">Todos</button>
+        </div>
+        <div class="filter filter--refresh">
+          <button class="filter__btn filter__btn--refresh" id="btn-refresh-catalog" title="Actualizar catálogo">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            Actualizar
+          </button>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="products" id="products-grid">
+        <div class="catalog-loader" id="catalog-loader">
+          <div class="catalog-loader__spinner"></div>
+          <p>Cargando catálogo…</p>
+        </div>
+      </div>
+
+      <p class="catalog-empty" id="catalog-empty" style="display:none">
+        No hay piezas que coincidan con el filtro seleccionado.
+      </p>
+
+      <!-- CTA -->
+      <div class="collection__cta" style="margin-top:var(--space-4)" data-animate="fade-up">
+        <p class="collection__price-anchor">
+          Piezas personalizadas desde <strong>COP 800.000</strong> · Esmeraldas seleccionadas · Diseño único
+        </p>
+        <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20vi%20el%20cat%C3%A1logo%20y%20quiero%20saber%20m%C3%A1s"
+           target="_blank" rel="noopener" class="btn btn--gold">
+          Consultar por WhatsApp
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <p class="collection__response-time">Respondemos en menos de 2 horas · Lun a Sáb, 9am–7pm</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Kambó Fine Jewelry" width="130" height="34" loading="lazy" />
+        </a>
+        <p class="footer__tagline">Joyería artesanal de lujo en Colombia. Piezas únicas en esmeraldas colombianas, diamantes, oro y plata.</p>
+      </div>
+      <nav class="footer__links">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/catalogo">Catálogo</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__links">
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="/catalogo">Anillos</a></li>
+          <li><a href="/catalogo">Collares</a></li>
+          <li><a href="/catalogo">Pulseras</a></li>
+          <li><a href="/catalogo">Aretes</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h4>Contacto directo</h4>
+        <a href="https://wa.me/573014009541" target="_blank" rel="noopener" class="footer__wa-btn">
+          <svg viewBox="0 0 24 24" fill="white" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escríbenos en WhatsApp
+        </a>
+        <a href="https://www.instagram.com/kambofinejewelry/" target="_blank" rel="noopener" class="footer__ig-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r=".8" fill="white" stroke="none"/></svg>
+          @kambofinejewelry
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Kambó Fine Jewelry. Todos los derechos reservados.</p>
+      <p>Hecho con ♥ en Colombia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20una%20pieza%20del%20cat%C3%A1logo"
+   target="_blank" rel="noopener"
+   class="whatsapp-float"
+   aria-label="Contactar a Kambó Fine Jewelry por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

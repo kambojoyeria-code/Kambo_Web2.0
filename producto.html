@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Kambó Fine Jewelry | Joyería Artesanal con Esmeraldas Colombianas</title>
+
+  <meta name="description" id="meta-description"
+    content="Descubre esta pieza exclusiva de Kambó Fine Jewelry — Joyería artesanal elaborada en Bogotá, Colombia. Esmeraldas colombianas certificadas, oro y plata." />
+  <meta name="keywords" content="joyería bogotá, joyería colombia, esmeraldas colombianas, kambo, kambó, anillos, diamantes, plata, oro, joyería fina" />
+  <meta name="author" content="Kambó Fine Jewelry" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product" />
+  <meta property="og:site_name" content="Kambó Fine Jewelry" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:url" id="og-url" content="https://kambo-six.vercel.app/producto" />
+  <meta property="og:title" id="og-title" content="Kambó Fine Jewelry | Joyería Artesanal con Esmeraldas Colombianas" />
+  <meta property="og:description" id="og-description"
+    content="Pieza artesanal exclusiva de Kambó Fine Jewelry. Esmeraldas colombianas certificadas en oro y plata." />
+  <meta property="og:image" id="og-image" content="https://kambo-six.vercel.app/assets/images/producto-real.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" id="tw-title" content="Kambó Fine Jewelry | Esmeraldas Colombianas" />
+  <meta name="twitter:description" id="tw-desc" content="Pieza artesanal exclusiva. Esmeraldas colombianas certificadas en oro y plata." />
+  <meta name="twitter:image" id="tw-image" content="https://kambo-six.vercel.app/assets/images/producto-real.png" />
+
+  <!-- JSON-LD Product schema -->
+  <script type="application/ld+json" id="product-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kambó Fine Jewelry — Pieza Artesanal",
+    "brand": { "@type": "Brand", "name": "Kambó Fine Jewelry" },
+    "description": "Pieza de joyería artesanal exclusiva de Kambó Fine Jewelry. Elaborada en Colombia con esmeraldas colombianas certificadas, diamantes y metales nobles.",
+    "image": "https://kambo-six.vercel.app/assets/images/producto-real.png",
+    "url": "https://kambo-six.vercel.app/producto",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "COP",
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "Organization", "name": "Kambó Fine Jewelry", "telephone": "+573014009541" }
+    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/icon.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header header--scrolled" id="header">
+  <nav class="nav container">
+    <a href="/" class="nav__logo" aria-label="Kambó Fine Jewelry — Inicio">
+      <img src="assets/images/logo.png" alt="Kambó Fine Jewelry" width="140" height="36" />
+    </a>
+
+    <ul class="nav__list" id="nav-list">
+      <li><a href="/"    class="nav__link">Inicio</a></li>
+      <li><a href="/#galeria" class="nav__link">Galería</a></li>
+      <li><a href="/catalogo" class="nav__link">Catálogo</a></li>
+      <li><a href="/nosotros" class="nav__link">Nosotros</a></li>
+      <li><a href="/#contacto" class="nav__link">Contacto</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20una%20pieza"
+         target="_blank" rel="noopener" class="nav__cta">Cotizar</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Loader -->
+  <div id="product-page-loader" class="product-detail" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;">
+    <div class="catalog-loader__spinner" style="border-top-color:var(--color-green)"></div>
+    <p style="margin-top:1.5rem;font-family:var(--font-display);font-style:italic;color:var(--color-text-muted);font-size:var(--size-lg)">
+      Cargando pieza…
+    </p>
+  </div>
+
+  <!-- Product detail (injected by JS) -->
+  <div id="product-detail-container"></div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="assets/images/logo.png" alt="Kambó Fine Jewelry" width="130" height="34" loading="lazy" />
+        </a>
+        <p class="footer__tagline">Joyería artesanal de lujo en Colombia. Piezas únicas en esmeraldas colombianas, diamantes, oro y plata.</p>
+      </div>
+      <nav class="footer__links">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/catalogo">Catálogo</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__links">
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="/catalogo">Anillos</a></li>
+          <li><a href="/catalogo">Collares</a></li>
+          <li><a href="/catalogo">Pulseras</a></li>
+          <li><a href="/catalogo">Aretes</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h4>Contacto directo</h4>
+        <a href="https://wa.me/573014009541" target="_blank" rel="noopener" class="footer__wa-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escríbenos en WhatsApp
+        </a>
+        <a href="https://www.instagram.com/kambofinejewelry/" target="_blank" rel="noopener" class="footer__ig-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+          @kambofinejewelry
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Kambó Fine Jewelry. Todos los derechos reservados.</p>
+      <p>Hecho con ♥ en Colombia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20esta%20pieza%20del%20cat%C3%A1logo"
+   target="_blank" rel="noopener"
+   class="whatsapp-float"
+   aria-label="Contactar a Kambó Fine Jewelry por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+</a>
+
+<!-- Dynamic meta tag updater -->
+<script>
+  window.__updateProductMeta = function(product) {
+    if (!product) return;
+    const base = 'https://kambo-six.vercel.app';
+    const url  = base + '/producto?id=' + encodeURIComponent(product.id);
+    const title = product.nombre + ' | Kambó Fine Jewelry';
+    const desc  = product.descripcion
+      ? product.descripcion + ' — Joyería artesanal en Colombia.'
+      : product.nombre + ' — Pieza artesanal de Kambó Fine Jewelry. Esmeraldas colombianas y metales nobles.';
+
+    document.title = title;
+    const pt = document.getElementById('page-title');
+    if (pt) pt.textContent = title;
+
+    const setContent = (id, val) => { const el = document.getElementById(id); if (el) el.setAttribute('content', val); };
+    document.getElementById('meta-description')?.setAttribute('content', desc);
+    setContent('og-url',         url);
+    setContent('og-title',       title);
+    setContent('og-description', desc);
+    setContent('tw-title',       title);
+    setContent('tw-desc',        desc);
+
+    const schema = document.getElementById('product-schema');
+    if (schema) {
+      schema.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type':    'Product',
+        name:        product.nombre,
+        brand:       { '@type': 'Brand', name: 'Kambó Fine Jewelry' },
+        description: product.descripcion || desc,
+        url:         url,
+        offers: {
+          '@type':       'Offer',
+          priceCurrency: 'COP',
+          ...(product.precio ? { price: String(product.precio).replace(/\./g,'') } : {}),
+          availability: 'https://schema.org/InStock',
+          seller: { '@type': 'Organization', name: 'Kambó Fine Jewelry', telephone: '+573014009541' }
+        }
+      });
+    }
+  };
+</script>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

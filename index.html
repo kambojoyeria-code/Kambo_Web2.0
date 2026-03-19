@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kambó Fine Jewelry | Joyería de Lujo en Colombia | Esmeraldas Certificadas</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Kambó Fine Jewelry: joyería artesanal de lujo en Bogotá, Colombia. Esmeraldas colombianas certificadas, diamantes, oro 18k y plata Ley 950. Más de 200 piezas creadas. Diseño personalizado." />
+  <meta name="keywords" content="joyería bogotá, kambo, kambó, joyería colombia, esmeraldas colombianas certificadas, diamantes, oro, plata, joyería fina, anillos de compromiso colombia, joyería artesanal" />
+  <meta name="author" content="Kambó Fine Jewelry" />
+  <link rel="canonical" href="https://kambo-six.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kambó Fine Jewelry | Joyería Artesanal con Esmeraldas Colombianas" />
+  <meta property="og:description" content="Joyería artesanal de lujo en Colombia. Más de 200 piezas creadas en plata y oro con esmeraldas colombianas certificadas, diamantes y amatistas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kambo-six.vercel.app/" />
+  <meta property="og:image" content="https://kambo-six.vercel.app/assets/images/producto-real.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Joyería artesanal Kambó Fine Jewelry — Esmeraldas colombianas" />
+  <meta property="og:site_name" content="Kambó Fine Jewelry" />
+  <meta property="og:locale" content="es_CO" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kambó Fine Jewelry | Esmeraldas Colombianas Certificadas" />
+  <meta name="twitter:description" content="Joyería artesanal de lujo en Colombia. Esmeraldas certificadas, diseño personalizado, más de 200 piezas creadas." />
+  <meta name="twitter:image" content="https://kambo-six.vercel.app/assets/images/producto-real.png" />
+  <meta name="twitter:image:alt" content="Kambó Fine Jewelry — Esmeraldas colombianas" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "Kambó Fine Jewelry",
+    "url": "https://kambo-six.vercel.app/",
+    "telephone": "+573014009541",
+    "priceRange": "$$",
+    "image": "https://kambo-six.vercel.app/assets/images/producto-real.png",
+    "description": "Joyería artesanal de lujo en Bogotá, Colombia. Especialistas en esmeraldas colombianas certificadas, diamantes y metales nobles. Más de 200 piezas creadas.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    "sameAs": ["https://www.instagram.com/kambofinejewelry/"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Mauricio Castro" },
+        "reviewBody": "El anillo que le compré a mi esposa para nuestro aniversario superó todas mis expectativas. La esmeralda es simplemente impresionante. Kambó tiene un arte especial."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Valentina Sánchez" },
+        "reviewBody": "Llevo el collar todos los días. Recibo cumplidos constantemente. La calidad es incomparable y el servicio de Kambó fue excepcional desde el primer mensaje."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Andrés Restrepo" },
+        "reviewBody": "Compré la pulsera como regalo y fue todo un éxito. La atención personalizada, la presentación del empaque y la calidad de la pieza son de primer nivel."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Vercel Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body class="body--dark-start">
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="/" class="nav__logo" aria-label="Kambó Fine Jewelry — Inicio">
+      <img src="assets/images/logo.png" alt="Kambó Fine Jewelry" width="140" height="36" />
+    </a>
+
+    <ul class="nav__list" id="nav-list" role="navigation" aria-label="Menú principal">
+      <li><a href="#inicio"       class="nav__link">Inicio</a></li>
+      <li><a href="#galeria"      class="nav__link">Galería</a></li>
+      <li><a href="/catalogo" class="nav__link">Catálogo</a></li>
+      <li><a href="/nosotros" class="nav__link">Nosotros</a></li>
+      <li><a href="#testimonios"  class="nav__link">Reseñas</a></li>
+      <li><a href="#contacto"     class="nav__link">Contacto</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20conocer%20su%20colecci%C3%B3n"
+         target="_blank" rel="noopener" class="nav__cta">Cotizar</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════
+     SCROLL VIDEO — Cinematic opener (replaces hero)
+     Apple-style: el video se scrubea con el scroll.
+     600vh = espacio de scroll para recorrer el video completo.
+═══════════════════════════════════════════ -->
+<section id="scroll-video-section" aria-label="Presentación de la colección" class="scroll-video-section--opener">
+  <div id="scroll-sticky">
+
+    <!-- Canvas (frame mode) -->
+    <canvas id="scroll-canvas" aria-hidden="true"></canvas>
+
+    <!-- Video fallback (scroll-driven, never autoplays) -->
+    <video
+      id="scroll-video-fallback"
+      src="video.mp4"
+      muted
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+    ></video>
+
+    <!-- Dark scrim for text legibility -->
+    <div class="scroll-video__scrim" aria-hidden="true"></div>
+
+    <!-- Loading bar (frame mode only) -->
+    <div id="scroll-loader" aria-hidden="true">
+      <p class="scroll-loader__logo">KAMBÓ</p>
+      <div class="scroll-loader__bar-wrap">
+        <div id="scroll-loader-bar"></div>
+      </div>
+      <span id="scroll-loader-pct">0%</span>
+    </div>
+
+    <!-- ── OVERLAY 1: Opening / Hero ── -->
+    <div class="scroll-overlay scroll-overlay--opening" data-show-at="0" data-hide-at="0.22" id="inicio">
+      <p class="scroll-overlay__label">Alta Joyería · Bogotá, Colombia</p>
+      <h1 class="scroll-overlay__title scroll-overlay__title--hero">
+        El Arte de Portar<br /><em>Esmeraldas</em><br />Auténticas
+      </h1>
+      <p class="scroll-overlay__desc">
+        Piezas únicas creadas a mano en esmeraldas colombianas certificadas,<br class="rwd-br" />
+        oro 18k y plata Ley 950.
+      </p>
+      <div class="scroll-overlay__cta scroll-overlay__cta--hero">
+        <a href="#galeria" class="btn btn--gold">
+          Ver Colección
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20quiero%20cotizar%20una%20pieza"
+           target="_blank" rel="noopener" class="btn btn--outline-light">
+          Cotizar Ahora
+        </a>
+      </div>
+      <p class="scroll-overlay__promise">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Respondemos en menos de 2 horas · Lun a Sáb, 9am–7pm
+      </p>
+    </div>
+
+    <!-- ── OVERLAY 2: Esmeraldas ── -->
+    <div class="scroll-overlay" data-show-at="0.25" data-hide-at="0.5">
+      <p class="scroll-overlay__label">Esmeraldas Colombianas</p>
+      <h2 class="scroll-overlay__title">
+        Colombia produce el<br /><em>70–90%</em><br />de las mejores del mundo
+      </h2>
+    </div>
+
+    <!-- ── OVERLAY 3: Artesanía ── -->
+    <div class="scroll-overlay" data-show-at="0.5" data-hide-at="0.75">
+      <p class="scroll-overlay__label">Artesanía de Lujo</p>
+      <h2 class="scroll-overlay__title">
+        Oro 18k &amp;<br /><em>Plata Ley 950</em><br />sin producción en masa
+      </h2>
+    </div>
+
+    <!-- ── OVERLAY 4: Call to action ── -->
+    <div class="scroll-overlay scroll-overlay--cta" data-show-at="0.75" data-hide-at="1">
+      <p class="scroll-overlay__label">Tu Próxima Pieza</p>
+      <h2 class="scroll-overlay__title">
+        Diseño<br /><em>Completamente</em><br />Personalizado
+      </h2>
+      <div class="scroll-overlay__cta">
+        <a href="#coleccion" class="btn btn--gold">Ver Catálogo</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-video__indicator" aria-hidden="true">
+      <div class="scroll-video__indicator-line"></div>
+      <span>Deslizar</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BRAND STRIP
+═══════════════════════════════════════════ -->
+<div class="brand-strip" aria-hidden="true">
+  <div class="brand-strip__track">
+    <div class="brand-strip__segment">
+      <span>Esmeraldas Colombianas Certificadas</span><span class="dot">✦</span>
+      <span>Piezas Únicas Artesanales</span><span class="dot">✦</span>
+      <span>Oro 18k &amp; Plata Ley 950</span><span class="dot">✦</span>
+      <span>Diamantes &amp; Amatistas</span><span class="dot">✦</span>
+      <span>+200 Pedidos Completados</span><span class="dot">✦</span>
+      <span>Bogotá, Colombia</span><span class="dot">✦</span>
+    </div>
+    <div class="brand-strip__segment" aria-hidden="true">
+      <span>Esmeraldas Colombianas Certificadas</span><span class="dot">✦</span>
+      <span>Piezas Únicas Artesanales</span><span class="dot">✦</span>
+      <span>Oro 18k &amp; Plata Ley 950</span><span class="dot">✦</span>
+      <span>Diamantes &amp; Amatistas</span><span class="dot">✦</span>
+      <span>+200 Pedidos Completados</span><span class="dot">✦</span>
+      <span>Bogotá, Colombia</span><span class="dot">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MANIFESTO
+═══════════════════════════════════════════ -->
+<section class="manifesto">
+  <div class="container">
+    <div class="manifesto__inner">
+      <p class="manifesto__text" data-animate="fade-right">
+        "No vendemos joyas.<br />
+        Creamos <strong>objetos de estatus</strong> que trascienden generaciones."
+      </p>
+      <div class="manifesto__details" data-animate="fade-left">
+        <div class="manifesto__detail">
+          <strong>Nuestra filosofía</strong>
+          <p>Cada pieza nace de una conversación. Escuchamos tu visión y la convertimos en
+             una joya que proyecta exactamente quién eres.</p>
+        </div>
+        <div class="manifesto__detail">
+          <strong>Acceso directo a origen</strong>
+          <p>Trabajamos directamente con fuentes de esmeraldas colombianas de primera calidad,
+             eliminando intermediarios y garantizando el mejor valor para ti.</p>
+        </div>
+        <div class="manifesto__detail">
+          <strong>Sin producción en masa</strong>
+          <p>Limitamos intencionalmente nuestra producción. Cada pieza Kambó es única —
+             creada solo para quien la encarga.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PORTFOLIO / GALLERY
+═══════════════════════════════════════════ -->
+<section class="portfolio" id="galeria">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="section-label">Portafolio</p>
+      <h2 class="section-title">Artesanía que<br /><em>Habla por Sí Sola</em></h2>
+      <p class="section-desc">Cada pieza nace de esmeraldas seleccionadas y metales nobles.
+         Una muestra de lo que podemos crear para ti.</p>
+    </div>
+
+    <div class="portfolio__grid" data-animate="fade-up">
+      <div class="portfolio__item portfolio__item--featured">
+        <img
+          src="assets/images/producto-real.png"
+          alt="Pieza artesanal Kambó Fine Jewelry — Joyería de lujo Colombia"
+          width="800" height="800"
+          loading="lazy"
+        />
+        <div class="portfolio__overlay"><span>Joyería Artesanal</span></div>
+      </div>
+
+      <div class="portfolio__item">
+        <img
+          src="assets/images/anillo-esmeralda.png"
+          alt="Anillo de esmeralda colombiana — Kambó Fine Jewelry"
+          width="600" height="600"
+          loading="lazy"
+        />
+        <div class="portfolio__overlay"><span>Anillos</span></div>
+      </div>
+
+      <div class="portfolio__item">
+        <img
+          src="assets/images/collar-esmeralda.png"
+          alt="Collar con esmeralda — Kambó Fine Jewelry"
+          width="600" height="600"
+          loading="lazy"
+        />
+        <div class="portfolio__overlay"><span>Collares</span></div>
+      </div>
+
+      <div class="portfolio__item">
+        <img
+          src="assets/images/pulsera-esmeralda.png"
+          alt="Pulsera de esmeralda colombiana — Kambó Fine Jewelry"
+          width="600" height="600"
+          loading="lazy"
+        />
+        <div class="portfolio__overlay"><span>Pulseras</span></div>
+      </div>
+
+      <!-- Placeholder: agregar más imágenes aquí -->
+      <div class="portfolio__item">
+        <div class="portfolio__placeholder">
+          <span>Agregar imagen</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio__cta" data-animate="fade-up">
+      <p class="portfolio__ig-label">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        Sigue nuestro trabajo en Instagram
+      </p>
+      <a href="https://www.instagram.com/kambofinejewelry/" target="_blank" rel="noopener" class="btn btn--outline">
+        @kambofinejewelry
+      </a>
+      <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20quiero%20cotizar%20una%20pieza%20personalizada"
+         target="_blank" rel="noopener" class="btn btn--primary">
+        Cotizar Mi Pieza
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CATALOG PREVIEW
+═══════════════════════════════════════════ -->
+<section class="collection" id="coleccion">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="section-label">Catálogo Exclusivo</p>
+      <h2 class="section-title">Encuentra Tu<br /><em>Próxima Inversión</em></h2>
+      <p class="section-desc">Piedras preciosas engastadas a la perfección. Cada creación Kambó
+         proyecta confianza, elegancia absoluta y un estatus innegable.</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-wrapper" data-animate="fade-up">
+      <div class="filter filter--category" id="dynamic-category-filters">
+        <span class="filter__label">Categoría:</span>
+        <button class="filter__btn active" data-filter-cat="all">Todos</button>
+      </div>
+      <div class="filter filter--metal" id="dynamic-metal-filters">
+        <span class="filter__label">Metal:</span>
+        <button class="filter__btn filter__btn--metal active" data-filter-metal="all">Todos</button>
+      </div>
+      <div class="filter filter--refresh">
+        <button class="filter__btn filter__btn--refresh" id="btn-refresh-catalog" title="Actualizar catálogo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          Actualizar
+        </button>
+      </div>
+    </div>
+
+    <!-- Products (dynamic) -->
+    <div class="products" id="products-grid">
+      <div class="catalog-loader" id="catalog-loader">
+        <div class="catalog-loader__spinner"></div>
+        <p>Cargando catálogo…</p>
+      </div>
+    </div>
+
+    <p class="catalog-empty" id="catalog-empty" style="display:none">
+      No hay piezas que coincidan con el filtro seleccionado.
+    </p>
+
+    <div class="collection__cta" data-animate="fade-up">
+      <p class="collection__price-anchor">
+        Piezas personalizadas desde <strong>COP 800.000</strong> · Esmeraldas seleccionadas · Diseño único
+      </p>
+      <a href="/catalogo" class="btn btn--gold">
+        Ver Catálogo Completo
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <p class="collection__response-time">Respondemos en menos de 2 horas · Lun a Sáb, 9am–7pm</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TRUST BLOCK
+═══════════════════════════════════════════ -->
+<div class="trust-block">
+  <div class="container trust-block__inner">
+    <div class="trust-item" data-animate="fade-up">
+      <span class="trust-icon">🏅</span>
+      <div>
+        <strong>Cada Esmeralda, Verificada</strong>
+        <p>Trabajamos con laboratorios gemológicos independientes. Certificación disponible
+           al costo real del laboratorio — sin margen adicional de nuestra parte.</p>
+      </div>
+    </div>
+    <div class="trust-item" data-animate="fade-up" style="--delay:.12s">
+      <span class="trust-icon">💎</span>
+      <div>
+        <strong>Acceso Directo a las Mejores Esmeraldas del Mundo</strong>
+        <p>Colombia produce entre el 70 y 90% de las esmeraldas de mayor calidad del planeta.
+           Esa es nuestra ventaja — y la tuya.</p>
+      </div>
+    </div>
+    <div class="trust-item" data-animate="fade-up" style="--delay:.24s">
+      <span class="trust-icon">🤝</span>
+      <div>
+        <strong>Asesoría sin Compromiso</strong>
+        <p>Cuéntanos tu idea. Sin presión — solo asesoría honesta para crear la pieza perfecta
+           que llevará tu nombre por generaciones.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════ -->
+<section class="about" id="nosotros">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__media" data-animate="fade-right">
+        <div class="about__img-wrap">
+          <img
+            src="assets/images/anillo-esmeralda.png"
+            alt="Joyería artesanal Kambó Fine Jewelry — Esmeraldas colombianas auténticas"
+            class="about__img"
+            width="600" height="700"
+            loading="lazy"
+          />
+          <div class="about__img-badge">
+            <span class="about__img-badge-num">2+</span>
+            <span class="about__img-badge-text">años de<br />trayectoria</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content" data-animate="fade-left">
+        <p class="section-label">Nuestra Historia — Bogotá, Colombia</p>
+        <h2 class="section-title">Pasión por las Piedras,<br /><em>Compromiso con la Excelencia</em></h2>
+
+        <p class="about__text">
+          <strong>Kambó Fine Jewelry</strong> nació del convencimiento de que Colombia —país que produce
+          entre el 70 y el 90% de las mejores esmeraldas del mundo— merece joyería artesanal a la altura
+          de esa riqueza natural. Llevamos más de dos años creando piezas de alta joyería exclusivamente
+          dentro de Colombia, completando de forma impecable más de 200 pedidos para clientes que exigen
+          exclusividad y diseño excepcional.
+        </p>
+        <p class="about__text">
+          Cada pieza comienza con una conversación. Escuchamos tu visión, seleccionamos la piedra
+          perfecta y trabajamos con destreza tanto en <strong>plata como en oro de 18k</strong>.
+          Nuestro fuerte reside en las magníficas <strong>esmeraldas colombianas</strong>, pero también
+          engastamos con maestría <strong>diamantes clásicos, diamantes negros y amatistas</strong>.
+        </p>
+
+        <div class="about__values">
+          <div class="about__value">
+            <span class="about__value-icon">◇</span>
+            <div>
+              <strong>Transparencia Gemológica</strong>
+              <p>Si deseas certificación para tu esmeralda, lo gestionamos. Solo pagas el costo
+                 exacto del laboratorio independiente — sin un peso más.</p>
+            </div>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">◇</span>
+            <div>
+              <strong>Selección Rigurosa de Piedras</strong>
+              <p>Solo entra a una pieza Kambó lo que nosotros mismos estaríamos orgullosos de portar:
+                 brillo, claridad e impacto visual excepcionales.</p>
+            </div>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">◇</span>
+            <div>
+              <strong>Proceso Cercano y Directo</strong>
+              <p>Comunicación directa, sin intermediarios. Más de 200 proyectos completados son
+                 nuestro mayor aval.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:var(--space-2)">
+          <a href="/nosotros" class="btn btn--primary">Conocer más →</a>
+          <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20su%20proceso"
+             target="_blank" rel="noopener" class="btn btn--outline">Conversemos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STATS
+═══════════════════════════════════════════ -->
+<div class="stats">
+  <div class="container stats__grid">
+    <div class="stat" data-animate="fade-up">
+      <span class="stat__num" data-count="2">0</span><span class="stat__num">+</span>
+      <span class="stat__label">Años de trayectoria</span>
+    </div>
+    <div class="stat" data-animate="fade-up" style="--delay:.1s">
+      <span class="stat__num" data-count="200">0</span><span class="stat__num">+</span>
+      <span class="stat__label">Pedidos completados</span>
+    </div>
+    <div class="stat" data-animate="fade-up" style="--delay:.2s">
+      <span class="stat__num" data-count="100">0</span><span class="stat__num">%</span>
+      <span class="stat__label">Artesanía colombiana</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
+<section class="testimonials" id="testimonios">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="section-label">Reseñas de Clientes</p>
+      <h2 class="section-title">Lo que dicen<br /><em>Nuestros Clientes</em></h2>
+      <p class="section-desc">Más de 200 pedidos completados. Estas son algunas de las
+         historias detrás de las piezas.</p>
+    </div>
+
+    <div class="testimonials__grid">
+      <div class="testimonial" data-animate="fade-up">
+        <div class="testimonial__stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="testimonial__text">"El anillo que le compré a mi esposa para nuestro aniversario superó todas
+           mis expectativas. La esmeralda es simplemente impresionante y la atención personalizada
+           marcó la diferencia. Kambó tiene un arte especial."</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar" aria-hidden="true">MC</div>
+          <div>
+            <strong>Mauricio Castro</strong>
+            <span>Medellín, Colombia · Anillo de Aniversario</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial testimonial--featured" data-animate="fade-up" style="--delay:.1s">
+        <div class="testimonial__stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="testimonial__text">"Llevo el collar todos los días. Recibo cumplidos constantemente. La
+           calidad es incomparable — se nota que cada detalle fue pensado. El servicio de Kambó
+           fue excepcional desde el primer mensaje hasta la entrega."</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar" aria-hidden="true">VS</div>
+          <div>
+            <strong>Valentina Sánchez</strong>
+            <span>Bogotá, Colombia · Collar con Esmeralda</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial" data-animate="fade-up" style="--delay:.2s">
+        <div class="testimonial__stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="testimonial__text">"Compré la pulsera como regalo y fue todo un éxito. La atención
+           personalizada, la presentación del empaque y la calidad de la pieza son de primer
+           nivel. Lo recomiendo sin dudarlo."</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar" aria-hidden="true">AR</div>
+          <div>
+            <strong>Andrés Restrepo</strong>
+            <span>Cali, Colombia · Pulsera de Regalo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials__cta" data-animate="fade-up">
+      <p>¿Ya tienes una pieza Kambó? Comparte tu experiencia.</p>
+      <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20quiero%20dejar%20mi%20rese%C3%B1a"
+         target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+        Dejar mi reseña
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="section-label">Cotización</p>
+      <h2 class="section-title">Crea Tu<br /><em>Pieza Única</em></h2>
+      <p class="section-desc">¿Tienes una idea en mente? Cuéntanos tu visión. Personalizamos
+         cada detalle para crear la joya de tus sueños.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__info" data-animate="fade-right">
+        <div class="contact__item">
+          <span class="contact__icon">✨</span>
+          <div>
+            <strong>Diseño a Medida</strong>
+            <span>Tú lo sueñas, nosotros lo fabricamos con gemas auténticas.</span>
+          </div>
+        </div>
+        <div class="contact__item">
+          <span class="contact__icon">💍</span>
+          <div>
+            <strong>Metales Nobles</strong>
+            <span>Oro 18k o Plata Ley 950 con acabados de alta joyería.</span>
+          </div>
+        </div>
+        <div class="contact__item">
+          <span class="contact__icon">📸</span>
+          <div>
+            <strong>Envía tu Referencia</strong>
+            <span>Completa el formulario y adjunta tu imagen por WhatsApp.</span>
+          </div>
+        </div>
+        <div class="contact__item">
+          <span class="contact__icon">⏱️</span>
+          <div>
+            <strong>Respuesta en Menos de 2 Horas</strong>
+            <span>Lun a Sáb, 9am–7pm. Asesoría sin compromiso.</span>
+          </div>
+        </div>
+        <div class="contact__social">
+          <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n"
+             target="_blank" rel="noopener" class="contact__social-link contact__social-link--wa"
+             aria-label="WhatsApp Kambó Fine Jewelry">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contact-form" novalidate data-animate="fade-left">
+        <div class="form-group">
+          <label for="name">Tu Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Ej. María García" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="metal">Preferencia de Metal</label>
+          <select id="metal" name="metal" required>
+            <option value="">Selecciona el metal</option>
+            <option value="Oro de 18k">Oro de 18k</option>
+            <option value="Plata Ley 950">Plata Ley 950</option>
+            <option value="Por definir">Por definir / Asesoría</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="occasion">¿Para qué ocasión? (Opcional)</label>
+          <input type="text" id="occasion" name="occasion" placeholder="Ej. Compromiso, Grado, Regalo…" />
+        </div>
+        <div class="form-group">
+          <label for="message">Cuéntanos tu idea</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="Describe la pieza, tipo de piedra o detalles específicos…" required></textarea>
+        </div>
+        <div class="form-tip">
+          <p><strong>💡 Siguiente paso:</strong> Al dar clic se abrirá WhatsApp. Si tienes
+             una foto de referencia, podrás enviárnosla allí (opcional).</p>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          Solicitar Cotización por WhatsApp
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="Kambó Fine Jewelry — Inicio">
+          <img src="assets/images/logo.png" alt="Kambó Fine Jewelry" width="130" height="34" loading="lazy" />
+        </a>
+        <p class="footer__tagline">
+          Joyería artesanal de lujo en Colombia. Piezas únicas en esmeraldas colombianas,
+          diamantes, oro y plata. Trascendemos la joyería tradicional creando objetos de estatus.
+        </p>
+      </div>
+
+      <nav class="footer__links" aria-label="Navegación del pie">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="/catalogo">Catálogo</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="#testimonios">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__links" aria-label="Categorías de joyería">
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="/catalogo">Anillos</a></li>
+          <li><a href="/catalogo">Collares</a></li>
+          <li><a href="/catalogo">Pulseras</a></li>
+          <li><a href="/catalogo">Aretes</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h4>Contacto directo</h4>
+        <a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20conocer%20sus%20joyas"
+           target="_blank" rel="noopener" class="footer__wa-btn">
+          <svg viewBox="0 0 24 24" fill="white" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escríbenos en WhatsApp
+        </a>
+        <a href="https://www.instagram.com/kambofinejewelry/" target="_blank" rel="noopener" class="footer__ig-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r=".8" fill="white" stroke="none"/></svg>
+          @kambofinejewelry
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Kambó Fine Jewelry. Todos los derechos reservados.</p>
+      <p>Hecho con ♥ en Colombia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/573014009541?text=Hola%20Kamb%C3%B3%2C%20me%20interesa%20conocer%20sus%20joyas%20y%20recibir%20asesor%C3%ADa"
+   target="_blank" rel="noopener"
+   class="whatsapp-float"
+   aria-label="Contactar a Kambó Fine Jewelry por WhatsApp"
+   id="whatsapp-float">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+</a>
+
+<!-- Scripts -->
+<script src="js/frame-config.js"></script>
+<script src="js/scroll-video.js" defer></script>
+<script src="js/main.js" defer></script>
+
+
+</body>
+</html>
